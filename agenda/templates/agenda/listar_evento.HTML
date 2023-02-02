@@ -33,7 +33,7 @@
                             {% else %} A definir 
                         {%endif%}
                     </td>
-                    <td><a href="exibir_evento.html">Ver detalhes</a></td>
+                    <td><a href="{% url 'exibir_evento' evento.id %}">Ver detalhes</a></td>
                 </tr>
            {% endfor  %}
         </tbody>
